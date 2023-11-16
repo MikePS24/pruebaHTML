@@ -71,10 +71,10 @@
                                  <a class="nav-link" href="gallery.html">Productos</a>
                               </li>
                               <li class="nav-item">
-                                 <a class="nav-link" href="testimonial.html">Testimonios</a>
+                                 <a class="nav-link" href="contact.html">Contacto</a>
                               </li>
                               <li class="nav-item">
-                                 <a class="nav-link active" href="contact.html">Contacto</a>
+                                 <a class="nav-link" href="testimonial.html">Ingresar</a>
                               </li>
                            </ul>
                         </div>
@@ -96,24 +96,26 @@
                   </div>
                </div>
             </div>
+            <script src="https://smtpjs.com/v3/smtp.js"></script>
+            <script src="js/"></script>
             <div class="row">
                <div class="col-md-6">
-                  <form id="request" class="main_form">
+                  <form id="request" class="main_form" action="https://formsubmit.co/mikemgl242@gmail.com" method="POST">
                      <div class="row">
                         <div class="col-md-12 ">
-                           <input class="contactus" placeholder="Name" type="type" name="Name"> 
+                           <input class="contactus" placeholder="Nombre" type="type" name="Name"> 
                         </div>
                         <div class="col-md-12">
                            <input class="contactus" placeholder="Email" type="type" name="Email"> 
                         </div>
                         <div class="col-md-12">
-                           <input class="contactus" placeholder="Phone Number" type="type" name="Phone Number">                          
+                           <input class="contactus" placeholder="Numero telefónico" type="type" name="Phone Number">                          
                         </div>
                         <div class="col-md-12">
-                           <textarea class="textarea" placeholder="Message" type="type" Message="Name">Message</textarea>
+                           <textarea class="contactus" placeholder="Mensaje" type="type" name="Message"></textarea>
                         </div>
                         <div class="col-md-12">
-                           <button class="send_btn">Send</button>
+                           <button class="send_btn" onclick="sendEmail()">Enviar</button>
                         </div>
                      </div>
                   </form>
@@ -129,83 +131,68 @@
          </div>
       </div>
       <!-- end contact -->
-      <!--  footer -->
-      <footer>
-         <div class="footer">
-            <div class="container">
-               <div class="row">
-                  <div class=" col-md-3 col-sm-6">
-                     <ul class="social_icon">
-                        <li><a href="https://www.facebook.com/"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                        <li><a href="https://twitter.com/"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                        <li><a href="https://www.linkedin.com"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                        <li><a href="https://www.instagram.com"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                     </ul>
-                     <p class="variat pad_roght2">Puedes acceder a nuestras redes sociales
-                        atraves de los íconos que estan arriba.
-                     </p>
-                  </div>
-                  <div class=" col-md-3 col-sm-6">
-                     <h3>LET US HELP YOU </h3>
-                     <p  class="variat pad_roght2">There are many variat
-                        ions of passages of L
-                        orem Ipsum available
-                        , but the majority h
-                        ave suffered altera
-                        tion in some form, by 
-                     </p>
-                  </div>
-                  <div class=" col-md-3 col-sm-6">
-                     <h3>LET US HELP YOU </h3>
-                     <p  class="variat pad_roght2">There are many variat
-                        ions of passages of L
-                        orem Ipsum available
-                        , but the majority h
-                        ave suffered altera
-                        tion in some form, by 
-                     </p>
-                  </div>
-                  <div class="col-md-3 col-sm-6">
-                     <h3>INFORMATION</h3>
-                     <ul class="link_menu">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html"> About</a></li>
-                        <li><a href="service.html">Services</a></li>
-                        <li><a href="gallery.html">Gallery</a></li>
-                        <li><a href="testimonial.html">Testimonial</a></li>
-                        <li><a href="contact.html">Contact Us</a></li>
-                     </ul>
-                  </div>
-                  <div class="col-md-3 col-sm-6">
-                     <h3>OUR Design</h3>
-                     <p  class="variat">There are many variat
-                        ions of passages of L
-                        orem Ipsum available
-                        , but the majority h
-                        ave suffered altera
-                        tion in some form, by 
-                     </p>
-                  </div>
+     <!--  footer -->
+     <footer>
+      <div class="footer">
+         <div class="container">
+            <div class="row">
+               <div class=" col-md-3 col-sm-6">
+                  <ul class="social_icon">
+                     <li><a href="https://www.facebook.com/"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                     <li><a href="https://twitter.com/"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                     <li><a href="https://www.linkedin.com"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                     <li><a href="https://www.instagram.com"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                  </ul>
+                  <p class="variat pad_roght2">Puedes acceder a nuestras redes sociales
+                     atraves de los íconos que estan arriba.
+                  </p>
+               </div>
+               <div class=" col-md-3 col-sm-6">
+                  <h3>¡GRACIAS!</h3>
+                  <p  class="variat pad_roght2">Nuestra Cremería
+                     busca posicionarse como una de las más importantes en
+                     León, por ello agradecemos tu interes en nosotros,
+                     no dudes en contactarnos en cualquier momento que desees.
+                  </p>
+               </div>
+               <div class="col-md-3 col-sm-6">
+                  <h3>Información</h3>
+                  <ul class="link_menu">
+                     <li><a href="index.html">Inicio</a></li>
+                     <li><a href="about.html"> Nosotros</a></li>
+                     <li><a href="service.html">Servicios</a></li>
+                     <li><a href="gallery.html">Productos</a></li>
+                     <li><a href="testimonial.html">Login</a></li>
+                     <li><a href="contact.html">Contacto</a></li>
+                  </ul>
+               </div>
+               <div class="col-md-3 col-sm-6">
+                  <h3>Nuesto diseño</h3>
+                  <p  class="variat">El diseño de nuestra página
+                     se obtuvo del siguiente <span class="green"><a href="https://plantillashtmlgratis.com" class="green">link</a></span>
+                     ,si deseas conocer más diseños puedes acceder a la pagina.
+                  </p>
                </div>
             </div>
-            <div class="copyright">
-               <div class="container">
-                  <div class="row">
-                     <div class="col-md-10 offset-md-1">
-                        <p>© 2019 All Rights Reserved. Design by <a href="https://html.design/"> Free Html Templates</a></p>
-                     </div>
+         </div>
+         <div class="copyright">
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-10 offset-md-1">
+                     <p>© 2019 All Rights Reserved. Design by <a href="https://html.design/"> Free Html Templates</a></p>
                   </div>
                </div>
             </div>
          </div>
-      </footer>
-      <!-- end footer -->
-      <!-- Javascript files-->
-      <script src="js/jquery.min.js"></script>
-      <script src="js/bootstrap.bundle.min.js"></script>
-      <script src="js/jquery-3.0.0.min.js"></script>
-      <!-- sidebar -->
-      <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
-      <script src="js/custom.js"></script>
-   </body>
+      </div>
+   </footer>
+   <!-- end footer -->
+   <!-- Javascript files-->
+   <script src="js/jquery.min.js"></script>
+   <script src="js/bootstrap.bundle.min.js"></script>
+   <script src="js/jquery-3.0.0.min.js"></script>
+   <!-- sidebar -->
+   <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+   <script src="js/custom.js"></script>
+</body>
 </html>
